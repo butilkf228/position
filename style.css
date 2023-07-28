@@ -1,34 +1,80 @@
-.box {
-    width: 800px;
-    height: 600px;
-    border: 1px solid red;
-    background-color: aqua;
-    padding: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-}
-
-.inner-box {
-    width: 500px;
-    height: 400px;
-    border: 1px solid green;
-
+.menu {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    width: 800px;
 }
 
-ul {
-    border: 1px solid yellow;
-    position: absolute;
-    right: 20px;
-    top: 10px;
+a {
+    text-decoration: none;
 }
 
-.box-but {
+.menu-link {
+    display: block;
+    background-color: teal;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: none;
+    pointer-events: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    background-color: aquamarine;
+    color: black;
+    top: 100%;
+    width: 100%;
+}
+
+.menu-item {
+    outline: 1px solid tomato;
+    position: relative;
+}
+
+.menu-item:hover .submenu{
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    opacity: none;
+}
+
+.submenu a {
+    color: black;
+}
+
+.box {
+    width: 400px;
+    border: 5px solid red;
+}
+
+.box:hover {
+    border-radius: 30%;
+    overflow: hidden;
+}
+
+.dv,
+.dv-1 {
+    list-style: none;
+}
+
+.menu-2 {
+    display: flex;
+}
+
+.sub-open {
+    margin: 0;
+    padding: 10px;
+    opacity: 0;
+}
+
+.dv:hover .sub-open {
+    opacity: 1;
+    pointer-events: none;
+    background-color: aqua;
 }
 
